@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>Discord Widget</name>
+    <author>Evo</author>
+    <version>1.0.0</version>
+    <description>Shows the a Discord widget of your Discord server.</description>
+    <files>
+        <filename>mod_discord.xml</filename>
+        <filename module="mod_discord">mod_discord.php</filename>
+        <filename>index.html</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="serverId" type="text" default="" label="Discord Server ID" />
+                <field name="theme" type="combo" default="" label="Theme">
+                    <option value="dark">Dark</option>
+                    <option value="light">Light</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>
